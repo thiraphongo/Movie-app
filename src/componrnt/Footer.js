@@ -1,16 +1,14 @@
 import {
   Facebook,
-  Instagram,
   MailOutline,
   Phone,
-  Pinterest,
   Room,
   Twitter,
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { ListItemText } from "@material-ui/core";
-import { Link } from "react-router-dom";
+
 
 const Container = styled.div`
   display: flex;
@@ -104,19 +102,11 @@ const Footer = () => {
             <Facebook />
           </SocialIcon>
           </a>
-          {/* <SocialIcon color="E4405F">
-            <Instagram />
-          </SocialIcon> */}
-
           <a href="https://twitter.com/themoviedb">
           <SocialIcon button color="55ACEE">
             <Twitter />
           </SocialIcon>
           </a>
-
-          {/* <SocialIcon color="E60023">
-            <Pinterest />
-          </SocialIcon> */}
         </SocialContainer>
         
       </Left>
@@ -146,7 +136,7 @@ const Footer = () => {
 
       
     <ListItem button>
-    <a href="/contactlist">
+    <a href="/contactmanager">
        <ListItemText primary="Contact" />
        </a>
      </ListItem>
@@ -156,11 +146,6 @@ const Footer = () => {
     <ListItemText primary="Blog" />
     </a>
      </ListItem>
-   
- 
-       
-  
-
         </List>
 
       </Center>
