@@ -9,6 +9,8 @@ import {
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { ListItemText } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -97,28 +99,70 @@ const Footer = () => {
         that's precisely what makes us different.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="3B5999">
+        <a href="https://www.facebook.com/themoviedb">
+          <SocialIcon button color="3B5999">
             <Facebook />
           </SocialIcon>
-          <SocialIcon color="E4405F">
+          </a>
+          {/* <SocialIcon color="E4405F">
             <Instagram />
-          </SocialIcon>
-          <SocialIcon color="55ACEE">
+          </SocialIcon> */}
+
+          <a href="https://twitter.com/themoviedb">
+          <SocialIcon button color="55ACEE">
             <Twitter />
           </SocialIcon>
-          <SocialIcon color="E60023">
+          </a>
+
+          {/* <SocialIcon color="E60023">
             <Pinterest />
-          </SocialIcon>
+          </SocialIcon> */}
         </SocialContainer>
+        
       </Left>
       <Center>
         <Title>Useful Links</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Wishlist</ListItem>
-          
+      
+        
+          <ListItem button>
+    <a href="/">
+       <ListItemText primary="Home" />
+       </a>
+     </ListItem>
+
+          <ListItem button>
+    <a href="/sign-in">
+       <ListItemText primary="My Account" />
+       </a>
+     </ListItem>
+
+          <ListItem button>
+    <a href="/wishlist">
+       <ListItemText primary="Wishlist" />
+       </a>
+     </ListItem>
+
+
+      
+    <ListItem button>
+    <a href="/contactlist">
+       <ListItemText primary="Contact" />
+       </a>
+     </ListItem>
+  
+    <ListItem button>
+    <a href="/">
+    <ListItemText primary="Blog" />
+    </a>
+     </ListItem>
+   
+ 
+       
+  
+
         </List>
+
       </Center>
       <Right>
         <Title>Contact</Title>

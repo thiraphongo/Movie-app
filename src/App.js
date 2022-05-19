@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom
 import Navbar from "./componrnt/Navbar";
 import Footer from "./componrnt/Footer";
 import './App.css'
+import ContactList from "./pages/ContactList";
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
       <Route path="/search" element={<Search />} />
        {/* <Route path="/" component={Home} exact />
       <Route path="/search" component={Search} /> */}
+
+      {/* Footer */}
+      <Route path="/contactlist" element={<ContactList />} />
       </Routes>
       <Footer />
     </Router>
