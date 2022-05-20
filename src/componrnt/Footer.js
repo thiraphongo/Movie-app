@@ -142,7 +142,7 @@ const Footer = () => {
      </ListItem>
   
     <ListItem button>
-    <a href="/">
+    <a href="/blog">
     <ListItemText primary="Blog" />
     </a>
      </ListItem>
