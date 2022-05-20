@@ -136,7 +136,7 @@ const Footer = () => {
 
       
     <ListItem button>
-    <a href="/contactmanager">
+    <a href="https://react-contact-manager-thiraphong.netlify.app/">
        <ListItemText primary="Contact" />
        </a>
      </ListItem>

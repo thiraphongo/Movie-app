@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./componrnt/Navbar";
 import Footer from "./componrnt/Footer";
 import './App.css'
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 const App = () => {
@@ -14,12 +16,8 @@ const App = () => {
       <Routes>
       <Route path="/" element={<Home/>} exact />
       <Route path="/search" element={<Search />} />
-       {/* <Route path="/" component={Home} exact />
-      <Route path="/search" component={Search} /> */}
-
-      {/* Footer */}
-     
-      
+      <Route path="/register" element={<Register />} />
+      <Route path="/sign-in" element={<Login />} />
       </Routes>
       <Footer />
     </Router>
